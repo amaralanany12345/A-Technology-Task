@@ -1,0 +1,244 @@
+    .qrCode{
+      position: absolute;
+      left: 40px;
+      top: -30px;
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 355px;
+      border-radius: 10px;
+      background-color: #7c00ff;
+    }
+    .qrCode .header{
+      color: white;
+      position: relative;
+      top: 10px;
+      text-align: center;
+    }
+    .img{
+    width: 15px;
+    }
+    .qrCode .header .delete{
+      position: relative;
+      right: 150px;
+      top: 30px;
+    }
+    .delete:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .tooltip {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; /* Position above the button */
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow at the bottom */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+    .qrCode .header .Link .copyBtn{
+      display: flex;
+      flex-direction: row;
+      /* justify-content: center; */
+      background-color: white;
+      color: #7c00ff;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      /* align-items: center; */
+      /* background-color: gray; */
+      
+    }
+    .qrCode .header .Link .linkTxt{
+      position: absolute;
+      left: 50px;
+      font-size: 18px;
+      top: 8px;
+    }
+    .qrCode .header .Link{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      background-color: white;
+      border-radius: 5px;
+      left:60px;
+      width: 270px;
+      height: 50px;
+      padding: 5px;
+      color: black;
+    }
+    .qrCode .median{
+      color: white;
+      position: relative;
+      left: 20px;
+      top: 10px;
+    }
+
+    .qrCode .footer {
+      display: flex;
+      flex-direction: row; 
+      position: relative;
+      top: 55px; 
+    }
+    .qrCode .footer .share .img{
+      position: relative;
+      top: 4px;
+    }
+    .qrCode .footer .share .shareText{
+      position: relative;
+      top: 4px;
+    }
+      .qrCode .footer .share{
+      position: relative;
+      left: 140px;
+      top: 50px;
+      width:  70px;
+      height: 30px;
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px ;
+      background-color: #7c00ff;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+    }
+    .qrCode .footer .occasion{
+      position: relative;
+      top: 30px; 
+      left: 190px;
+      color: white;
+    }
+
+    .qrCode .code{
+      border-radius: 10px;
+      position: relative;
+      left: 30px;
+      bottom: 18px;
+  }
+    .qrCode .code .qr{
+      border-radius: 10px;
+      /* position: relative;
+      left: 30px;
+      bottom: 18px; */
+  }
+
+  button{
+    cursor: pointer;
+    width: 60px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px ;
+    background-color: #7c00ff;
+  }
+.ticket {
+    width: 300px;
+    background-color: #b18aff; /* Adjusted background to match your image */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    position: relative;
+  }
+  
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .delete-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ticket-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .ticket-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .copy-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .copy-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ticket-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .qr-section img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .discount-section {
+    text-align: right;
+  }
+  
+  .share-button {
+    background-color: #7c00ff;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .discount {
+    font-size: 18px;
+  }
+  
+  
+.share:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copyBtn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
